@@ -11,7 +11,7 @@ class Dops < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.3.0/dops-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "be2039261907cbaf86c9cac746fcccb678b9efac1e5284b6568751152c3d8101"
+      sha256 "b18959a7247f5069dc2cde46e5d812911593ba1d5ccd5702b5a958a6e5fc0500"
 
       define_method(:install) do
         bin.install "dops"
@@ -19,7 +19,7 @@ class Dops < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.3.0/dops-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f5d9706a90e15f4f24c931fad14994cdfc232a70ebe1a56e9ca1cf3dd420e3ee"
+      sha256 "5b176a7eb14e0754a3647843472e069ef23797b37cdd52b65ccb317f3fc2ab8c"
 
       define_method(:install) do
         bin.install "dops"
@@ -30,14 +30,14 @@ class Dops < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.3.0/dops-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "1fcc4bd4450cf8ce95b48f17584b73ce78bf823250b40f26de35e4c6620347e5"
+      sha256 "c3396529ea7cbc2af87d848ff3fd0dbbcbed7e4b5948633115db62806d70d667"
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.3.0/dops-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "b818c7bd7744c30ceb3b3194a9be1dcfeafd537b7e7356b168f5896c50db4343"
+      sha256 "156e1f73756df291ba9c73889d335c335cebcd34a93d113ce1d11ac093e83cec"
       define_method(:install) do
         bin.install "dops"
       end
