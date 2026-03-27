@@ -5,21 +5,21 @@
 class Dops < Formula
   desc "Developer Operations TUI — browse, parameterize, and execute runbooks from the terminal"
   homepage "https://github.com/jacobhuemmer/dops-cli"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.0/dops-cli_0.7.0_darwin_amd64.tar.gz"
-      sha256 "607d2c403f7a99869feeeab1b2d7320b7c47bc83bbb9ab0546a4507a8e9b3781"
+      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.1/dops-cli_0.7.1_darwin_amd64.tar.gz"
+      sha256 "744be7f3bfd083976439f3fae60c5514660ce0068e03dc3b4c5166ec9eb8c889"
 
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.0/dops-cli_0.7.0_darwin_arm64.tar.gz"
-      sha256 "43c8f3ce638c2b23a79b3a6e9d0a35a1d85d0f5f2c5ed900b4d01831a1b81c89"
+      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.1/dops-cli_0.7.1_darwin_arm64.tar.gz"
+      sha256 "9a4cbc72c85c18e3537ada4e0da330bda7a037e9c0ebf9e09f7f2a252f79ec8a"
 
       define_method(:install) do
         bin.install "dops"
@@ -29,15 +29,15 @@ class Dops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.0/dops-cli_0.7.0_linux_amd64.tar.gz"
-      sha256 "34c60ba169e724f3f2ee43039f6c7dc91ea9c1d7cf551e8b02c0abcf15cee4b4"
+      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.1/dops-cli_0.7.1_linux_amd64.tar.gz"
+      sha256 "f0e4fa02e6c50b6feb10945bb8a0919bf9936dcc8e575ca42cb460950526095c"
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.0/dops-cli_0.7.0_linux_arm64.tar.gz"
-      sha256 "19ad249e5d80d757d80b042626b3e80a2da35da56fb6b977ce8f36793cc0a308"
+      url "https://github.com/jacobhuemmer/dops-cli/releases/download/v0.7.1/dops-cli_0.7.1_linux_arm64.tar.gz"
+      sha256 "5cc55474ac8561141f55bef80e9b57c5f02f7901751ffae0a6d5a62401e4b241"
       define_method(:install) do
         bin.install "dops"
       end
