@@ -5,21 +5,21 @@
 class M365 < Formula
   desc "Microsoft 365 CLI for one signed-in user"
   homepage "https://github.com/jacobhuemmer/m365"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.0/m365_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9e143015b7e0c1d9b677c6696f41116b915d0932bbe2cbff80f4e97dd51679b8"
+      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.1/m365_0.1.1_darwin_amd64.tar.gz"
+      sha256 "b64c3ff5e1006c54d07a0b7289657a851a93b6cba462c0ebc2247d1688771be9"
 
       define_method(:install) do
         bin.install "m365"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.0/m365_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a321a1e0f6a959d13dd71c24240b08b4f87e1e8317380a86da83731eb1eceddc"
+      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.1/m365_0.1.1_darwin_arm64.tar.gz"
+      sha256 "ec88e981eed6640a84b2c7760b38ade09e99a74aa793f2470810780db52b93ee"
 
       define_method(:install) do
         bin.install "m365"
@@ -29,15 +29,15 @@ class M365 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.0/m365_0.1.0_linux_amd64.tar.gz"
-      sha256 "42cd23fca5d015a7bfa63a2aae9c90e67f69586aee49e2f52a0e208c3381709e"
+      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.1/m365_0.1.1_linux_amd64.tar.gz"
+      sha256 "80c6e5ca307b7ad93b879b99e372408da04cb323afe9f9fbfe616c9a927705cd"
       define_method(:install) do
         bin.install "m365"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.0/m365_0.1.0_linux_arm64.tar.gz"
-      sha256 "c14c7f4cd4d63f281a199b146000fc4e7f7a96e945a03c398886944c169c5f15"
+      url "https://github.com/jacobhuemmer/m365/releases/download/v0.1.1/m365_0.1.1_linux_arm64.tar.gz"
+      sha256 "a359802c0b4f1118fb206fdb31f9e82e633705e28d0f5c290fef298870bf7155"
       define_method(:install) do
         bin.install "m365"
       end
