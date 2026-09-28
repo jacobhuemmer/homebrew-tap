@@ -1,7 +1,7 @@
 class Kata < Formula
   desc "Script library and MCP server for reusable automation"
   homepage "https://github.com/jacobhuemmer/kata"
-  version "0.1.2"
+  version "0.1.3"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/jacobhuemmer/kata.git", branch: "main"
 
@@ -10,23 +10,23 @@ class Kata < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.2/kata-0.1.2-darwin-arm64.tar.gz"
-      sha256 "fb191994be5371b94527586411d39154f0a3ffd39ee8952c40ca528b9b49e078"
+      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.3/kata-0.1.3-darwin-arm64.tar.gz"
+      sha256 "0b1ffb59ac8c93cac80c741248726f3147533febfc7baa1cb7bdf297d6ab0895"
     end
     on_intel do
-      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.2/kata-0.1.2-darwin-x86_64.tar.gz"
-      sha256 "19a4e5abe9612061434ec0682f2ea222697fdf55db9533cf1389a825fc1b3c5d"
+      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.3/kata-0.1.3-darwin-x86_64.tar.gz"
+      sha256 "86ab6068658ec82b0389106d9bdc3e1ef478668ffe4d4125e69bdb69f7686392"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.2/kata-0.1.2-linux-aarch64.tar.gz"
-      sha256 "53e348d617028a83d319932a6947749b99ba6103d3260a65bd5d7c218208a786"
+      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.3/kata-0.1.3-linux-aarch64.tar.gz"
+      sha256 "24603c5dee36519e08e36cfe8a7f01c5f293ff3839da45fb3f379d3b1362aa45"
     end
     on_intel do
-      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.2/kata-0.1.2-linux-x86_64.tar.gz"
-      sha256 "28bcb3c67cd3e8d2ba2f645b3217bd0ea4b3ef89886dcb3074eec7435a2f1899"
+      url "https://github.com/jacobhuemmer/kata/releases/download/v0.1.3/kata-0.1.3-linux-x86_64.tar.gz"
+      sha256 "4cdb1180d99d0e5386c93f05177c178bcd1b990e67380521b476a82e778b4ee5"
     end
   end
 
