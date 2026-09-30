@@ -7,20 +7,20 @@ class Jkins < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jacobhuemmer/jkins/releases/download/v2.462.3/jkins_2.462.3_darwin_arm64.tar.gz"
-      sha256 "765abd3d311aeb529ee7d2afdcc97a3f03e8b866e4161a244d750832946e5ba4"
+      sha256 "5340a06ad59cb46bd397057ca70867af292ce75015e7e31cfa23b34780772bbe"
     else
       url "https://github.com/jacobhuemmer/jkins/releases/download/v2.462.3/jkins_2.462.3_darwin_amd64.tar.gz"
-      sha256 "c2e3483baccc83ffdf10d9f8cd0112452853ffed14ba98a0d4d956ee961c6e9a"
+      sha256 "cf539c7853121aad7f3a0467ddb2a43bfcdf1d4c9e665113becc18d8a9616c7d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/jacobhuemmer/jkins/releases/download/v2.462.3/jkins_2.462.3_linux_arm64.tar.gz"
-      sha256 "e9072a8c768a95cf4386b3dc39237287cdacee23918869580178a8187b583d33"
+      sha256 "177ff380713068708271515986ec12d4eb61f95658cd46351a742492cab03916"
     else
       url "https://github.com/jacobhuemmer/jkins/releases/download/v2.462.3/jkins_2.462.3_linux_amd64.tar.gz"
-      sha256 "89a11cf4fde2eebbfad88ef730f00c1d07cbdc1cb814a6c9d034bbfc8a942ba4"
+      sha256 "ca686d674d262723bf367764cce6ef7965835ab9f2b719fe46129d6b5d5ee893"
     end
   end
 
