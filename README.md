@@ -26,6 +26,7 @@ brew install --HEAD masonhuemmer/tap/m365
 | Formula | Description |
 | ------- | ----------- |
 | [m365](Formula/m365.rb) | Microsoft 365 CLI for one signed-in user |
+| [dops](Formula/dops.rb) | Developer Operations TUI for runbooks |
 
 ## Documentation
 
