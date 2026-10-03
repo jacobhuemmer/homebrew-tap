@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 10
     steps:
-      - run: brew tap jacobhuemmer/tap https://github.com/jacobhuemmer/homebrew-tap
-      - run: brew install jacobhuemmer/tap/jkins
+      - run: brew tap masonhuemmer/tap https://github.com/masonhuemmer/homebrew-tap
+      - run: brew install masonhuemmer/tap/jkins
       - run: test "$(jkins --version)" = "jkins v2.462.3"
-      - run: brew test jacobhuemmer/tap/jkins
+      - run: brew test masonhuemmer/tap/jkins

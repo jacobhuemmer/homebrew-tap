@@ -1,24 +1,24 @@
 # Homebrew Tap
 
-Homebrew formulae for installing [m365](https://github.com/jacobhuemmer/m365) via [Homebrew](https://brew.sh/).
+Homebrew formulae for installing [m365](https://github.com/masonhuemmer/m365) via [Homebrew](https://brew.sh/).
 
 ## Installation
 
 ```
-brew tap jacobhuemmer/tap
+brew tap masonhuemmer/tap
 brew install m365
 ```
 
 Or as a one-liner:
 
 ```
-brew install jacobhuemmer/tap/m365
+brew install masonhuemmer/tap/m365
 ```
 
 HEAD still works:
 
 ```
-brew install --HEAD jacobhuemmer/tap/m365
+brew install --HEAD masonhuemmer/tap/m365
 ```
 
 ## Formulae
@@ -31,4 +31,4 @@ brew install --HEAD jacobhuemmer/tap/m365
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh/).
 
-For m365 usage, see the [m365 repository](https://github.com/jacobhuemmer/m365).
+For m365 usage, see the [m365 repository](https://github.com/masonhuemmer/m365).
